@@ -1,0 +1,57 @@
+{
+  "name": "react-identity-component",
+  "version": "1.0.0",
+  "description": "A straightforward component to validate and apply a mask on input element that represents civil rights identity",
+  "keywords": [
+    "cpf",
+    "cnpj",
+    "validator",
+    "react",
+    "react-component",
+    "identity"
+  ],
+  "main": "index.js",
+  "files": [
+    "lib",
+    "dist",
+    "src"
+  ],
+  "repository": "https://github.com/luccascosta/react-identity-component",
+  "author": "Lucas Costa",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^23.0.0-alpha.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.2",
+    "jest-enzyme": "^6.0.0",
+    "path": "^0.12.7",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "scripts": {
+    "build": "webpack && babel src -d lib",
+    "clean": "rimraf lib dist coverage",
+    "prepublish": "yarn run clean && yarn run build",
+    "start": "webpack-dev-server -d --config ./example/webpack.config.js",
+    "test": "jest"
+  },
+  "jest": {
+    "roots": [
+      "src"
+    ]
+  }
+}
