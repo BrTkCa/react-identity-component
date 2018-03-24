@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="https://cdn.auth0.com/blog/react-js/react.png"/>
+    <title>ReactJS identity component by Lucas Costa</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <meta name="author" content="Lucas Costa <lbc.lucascosta@gmail.com>" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://npmcdn.com/react-identity-component@1.0.3/dist/react-identity-component.min.js"></script>
+  </head>
+  <body>
+    <div>
+        <section class="hero is-dark is-bold">
+            <div class="hero-body">
+                <div class="container">
+                <h1 class="title">
+                    Mask and Validators of civil rights identity 
+                </h1>
+                <h2 class="subtitle">
+                    The easiest way to validate and apply a mask on input element that represents civil rights identity in React
+                </h2>
+                </div>
+            </div>
+        </section>
+        <div class="columns is-gap is-centered">
+            <div class="column is-8">
+                <form onSubmit="alert('Success')">
+
+                    <div class="field">
+                        <label class="label">CPF</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <div id="cpf"></div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">CNPJ</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <div id="cnpj"></div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Subject</label>
+                        <div class="control">
+                            <div class="select">
+                                <select>
+                                    <option>Select dropdown</option>
+                                    <option>With options</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Message</label>
+                        <div class="control">
+                            <textarea class="textarea" placeholder="Textarea"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <button class="button is-link" type="submit">Submit</button>
+                        </div>
+                        <div class="control">
+                            <button class="button is-text" type="reset">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var Validator = ReactJSIdentityComponent.Validator;
+
+        function buildComponent(data){
+            return (
+                React.createElement(Validator, {
+                    type: data.itype,
+                    required: data.required,
+                    language: data.language,
+                    classes: data.classes
+                })
+            );
+        }
+        
+        ReactDOM.render((
+            buildComponent({
+                itype:"cpf",
+                required:true,
+                language:"pt-BR",
+                classes:"input"
+            })
+        ), document.getElementById('cpf'));
+        ReactDOM.render((
+            buildComponent({
+                itype:"cnpj",
+                required:true,
+                language:"pt-BR",
+                classes:"input"
+            })
+        ), document.getElementById('cnpj'));
+    </script>
+  </body>
+</html>
