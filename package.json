@@ -1,6 +1,6 @@
 {
   "name": "react-identity-component",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A straightforward component to validate and apply a mask on input element that represents civil rights identity",
   "keywords": [
     "cpf",
@@ -10,7 +10,7 @@
     "react-component",
     "identity"
   ],
-  "main": "index.js",
+  "main": "./lib/index",
   "files": [
     "lib",
     "dist",
