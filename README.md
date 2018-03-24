@@ -1,6 +1,12 @@
 <h1 align="center">ReactJS identity component</h1>
 <h3 align="center"><b>ReactJS identity component</b> is a straightforward component to validate and apply a mask on input element that represents civil rights identity in React</h3>
 
+<p align="center">
+	<a href="https://travis-ci.org/luccascosta/react-identity-component">
+		<img src="https://api.travis-ci.org/luccascosta/react-identity-component.svg?branch=master" />
+	</a>
+</p>
+
 # About
 Live preview
 
