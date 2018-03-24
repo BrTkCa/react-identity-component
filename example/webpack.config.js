@@ -11,7 +11,7 @@ module.exports = {
     },
     resolve: {
         alias: {
-            'react-ids-validator': path.join(__dirname, '../src')
+            'react-identity-component': path.join(__dirname, '../src')
         }
     },
     module: {

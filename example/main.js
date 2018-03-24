@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Validator} from 'react-ids-validator';
+import {Validator} from 'react-identity-component';
 
 ReactDOM.render(
     <div>

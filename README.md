@@ -27,7 +27,7 @@ It's only necessary to import the component and use it:
 
     import React from 'react';
     import ReactDOM from 'react-dom';
-    import {Validator} from 'react-ids-validator';
+    import {Validator} from 'react-identity-component';
 
     ReactDOM.render((
         <Validator
