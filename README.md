@@ -8,7 +8,7 @@
 </p>
 
 # About
-Live preview
+[Live demo](https://jsfiddle.net/lbclucascosta/h2tjprsp/)
 
 This component generates an input that applies a mask and validates the value if required. The validation is based on mathematical rules, without third-party libraries or online verification.
 
@@ -49,7 +49,7 @@ It's only necessary to import the component and use it:
 
 ## Validation
 
-When the *prop* required is indicated the component will validate the value inputted. Validations can include mathematical rules and, if the value inputted is valid the form can be submitted, if not the input will be red-bordered and show a message. You can try it on live preview!
+When the *prop* required is indicated the component will validate the value inputted. Validations can include mathematical rules and, if the value inputted is valid the form can be submitted, if not the input will be red-bordered and show a message. You can try it on live demo!
 
 ## LICENSE
 
