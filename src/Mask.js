@@ -37,7 +37,7 @@ export function onPasteCPF(event){
 export function CNPJ(event){
     let key = event.keyCode || event.which;
     const value = event.target.value;
-    const regex = /[0-9]|\./;
+    const regex = /[0-9]/;
     
     event.target.maxLength = 18;
     key = String.fromCharCode( key );
@@ -59,7 +59,7 @@ export function CNPJ(event){
 
 export function onPasteCNPJ(event){
     const value = event.target.value;
-    const regex = /[0-9]|\./;
+    const regex = /[0-9]/;
     
     event.target.maxLength = 18;
 

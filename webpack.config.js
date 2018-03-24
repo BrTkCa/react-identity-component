@@ -6,8 +6,8 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: 'react-ids-validator.min.js',
-        library: 'ReactIDsValidator',
+        filename: 'react-identity-component.min.js',
+        library: 'ReactJSIdentityComponent',
         libraryTarget: 'umd'
     },
     module: {
@@ -19,6 +19,5 @@ module.exports = {
             }
         }]
     },
-    plugins: [
-    ]
+    plugins: []
 }
