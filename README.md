@@ -8,8 +8,12 @@
 </p>
 
 # About
-[Live preview](https://luccascosta.github.io/react-identity-component/)
-[Live demo and source code](https://jsfiddle.net/lbclucascosta/h2tjprsp/)
+<p>
+    [Live preview](https://luccascosta.github.io/react-identity-component/)
+</p>
+<p>
+    [Live demo and source code](https://jsfiddle.net/lbclucascosta/h2tjprsp/)
+</p>
 
 This component generates an input that applies a mask and validates the value if required. The validation is based on mathematical rules, without third-party libraries or online verification.
 
