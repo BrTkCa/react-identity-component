@@ -1,4 +1,4 @@
-![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/BrTkCa/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/raw/react-identity-component__heads_master.json)
+![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/BrTkCa/7e8518effa060c374ddaeba872f5a0d5/raw/react-identity-component__heads_master.json)
 
 
 <h1 align="center">ReactJS identity component</h1>
