@@ -1,3 +1,6 @@
+[![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/<YourUsername>/<gist_id>/raw/<your-repo>__heads_main.json)]
+
+
 <h1 align="center">ReactJS identity component</h1>
 <h3 align="center"><b>ReactJS identity component</b> is a straightforward component to validate and apply a mask on input element that represents civil rights identity in React</h3>
 
