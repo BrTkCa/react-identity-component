@@ -66,10 +66,10 @@ jobs:
         echo "BRANCH=$(echo ${BRANCH_NAME})" >> $GITHUB_ENV
     - if: ${{ matrix.node-version == '14.x' }}
       name: Create the Badge
-      uses: schneegans/dynamic-badges-action@v1.0.0
+      uses: schneegans/dynamic-badges-action@v1.1.0
       with:
         auth: ${{ secrets.GIST_SECRET }}
-        gistID: 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
+        gistID: 7e8518effa060c374ddaeba872f5a0d5
         filename: react-identity-component__${{ env.BRANCH }}.json
         label: Test Coverage
         message: ${{ env.COVERAGE }}
