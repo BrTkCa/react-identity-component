@@ -32,18 +32,20 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^22.4.2",
     "jest-enzyme": "^6.0.0",
+    "jsdom": "19.0.0",
+    "jsdom-global": "3.0.2",
     "path": "^0.12.7",
-    "rimraf": "^2.6.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "webpack": "^4.1.1",
-    "webpack-cli": "^2.0.12",
-    "webpack-dev-server": "^3.1.1"
+    "rimraf": "^2.6.2",
+    "webpack": "^5.33.0",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^4.0.0"
   },
   "scripts": {
     "build": "webpack && babel src -d lib",
     "clean": "rimraf lib dist coverage",
-    "prepublish": "yarn run clean && yarn run build",
+    "prepublish": "npm run clean && npm run build",
     "start": "webpack-dev-server -d --config ./example/webpack.config.js",
     "test": "jest"
   },
