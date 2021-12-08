@@ -70,7 +70,7 @@ jobs:
       with:
         auth: ${{ secrets.GIST_SECRET }}
         gistID: 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
-        filename: your-repo-name__${{ env.BRANCH }}.json
+        filename: react-identity-component__${{ env.BRANCH }}.json
         label: Test Coverage
         message: ${{ env.COVERAGE }}
         color: green
