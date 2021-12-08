@@ -49,12 +49,14 @@
     "clean": "rimraf lib dist coverage",
     "prepublish": "npm run clean && npm run build",
     "start": "webpack-dev-server -d --config ./example/webpack.config.js",
-    "test": "jest",
+    "test": "jest --coverage",
     "lint": "eslint"
   },
   "jest": {
     "roots": [
       "src"
-    ]
+    ],
+    "collectCoverage": true,
+    "coverageReporters": ["json", "html"]
   }
 }
