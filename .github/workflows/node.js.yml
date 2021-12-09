@@ -34,7 +34,7 @@ jobs:
     - run: npm t
 
     - name: Update GitHub Profile README
-      uses: theboi/github-update-readme@master
+      uses: theboi/github-update-readme@main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
