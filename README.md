@@ -1,4 +1,4 @@
-![Coverage Badge](https://github.com/github/docs/actions/workflows/node.js.yml/badge.svg)
+![Coverage Badge](https://github.com/brtkca/react-identity-component/actions/workflows/node.js.yml/badge.svg)
 
 
 <h1 align="center">ReactJS identity component</h1>
