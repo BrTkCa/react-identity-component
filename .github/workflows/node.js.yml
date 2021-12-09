@@ -38,9 +38,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        header: "Hey, I'm Ryan! 👋"
-        subhead: "Currently a student in Singapore, passionate about creating all-things-tech to improve society."
-        footer: "**Learn more about me at [ryanthe.com](https://www.ryanthe.com)!**"
+        footer: "$(npm test)"
 
     - if: ${{ github.ref != 'refs/heads/master'}}
       uses: romeovs/lcov-reporter-action@v0.2.16
