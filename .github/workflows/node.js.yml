@@ -36,10 +36,10 @@ jobs:
     - name: Install rmarkdown
       run: Rscript -e 'install.packages("rmarkdown")'
     - name: Render README
-      run: Rscript -e 'rmarkdown::render("README.md")'
+      run: Rscript -e 'rmarkdown::render("README.Rmd")'
     - name: Commit results
       run: |
-        git commit README.md -m 'Re-build README.md' || echo "################################### TEST"
+        git commit README.md -m 'Re-build README.Rmd' || echo "################################### TEST"
         git push origin || echo "No changes to commit"
 
     - if: ${{ github.ref != 'refs/heads/master'}}
