@@ -33,14 +33,14 @@ jobs:
     - run: npm run lint
     - run: npm t
 
-    - name: Install rmarkdown
-      run: Rscript -e 'install.packages("rmarkdown")'
-    - name: Render README
-      run: Rscript -e 'rmarkdown::render("README.Rmd")'
-    - name: Commit results
-      run: |
-        git commit README.md -m 'Re-build README.Rmd' || echo "################################### TEST"
-        git push origin || echo "No changes to commit"
+  - name: Update GitHub Profile README
+    uses: theboi/github-update-readme@master
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    with:
+      header: "Hey, I'm Ryan! 👋"
+      subhead: "Currently a student in Singapore, passionate about creating all-things-tech to improve society."
+      footer: "**Learn more about me at [ryanthe.com](https://www.ryanthe.com)!**"
 
     - if: ${{ github.ref != 'refs/heads/master'}}
       uses: romeovs/lcov-reporter-action@v0.2.16
