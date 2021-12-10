@@ -16,4 +16,4 @@
 
 ---
 
-$(npm test)
+${SUMMARY}
