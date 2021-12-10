@@ -3,21 +3,6 @@
 ![Coverage Lines](https://github.com/brtkca/react-identity-component/coverage/badge-lines.svg)
 ![Coverage Statements](https://github.com/brtkca/react-identity-component/coverage/badge-statements.svg)
 
-<h1 align="center">ReactJS identity component</h1>
-<h3 align="center"><b>ReactJS identity component</b> is a straightforward component to validate and apply a mask on input element that represents civil rights identity in React</h3>
-
-<p align="center">
-	<a href="https://travis-ci.org/luccascosta/react-identity-component">
-		<img src="https://api.travis-ci.org/luccascosta/react-identity-component.svg?branch=master" />
-	</a>
-</p>
-
-# About
-
-[Live preview](https://luccascosta.github.io/react-identity-component/)
-
-[Live demo and source code](https://jsfiddle.net/lbclucascosta/h2tjprsp/)
-
 This component generates an input that applies a mask and validates the value if required. The validation is based on mathematical rules, without third-party libraries or online verification.
 
 # Getting started
