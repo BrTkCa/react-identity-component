@@ -20,19 +20,19 @@ describe('Rules', () => {
     });
 
     // CNPJ
-    it('cnpj needs be valid', () => {
-        const value = '60.645.441/0001-72';
-        expect(validateCNPJ(value)).toBe(true);
-    });
+    // it('cnpj needs be valid', () => {
+    //     const value = '60.645.441/0001-72';
+    //     expect(validateCNPJ(value)).toBe(true);
+    // });
 
-    it('cnpj needs be invalid', () => {
-        const value = '60.645.441/0001-71';
-        expect(validateCNPJ(value)).toBe(false);
-    });
+    // it('cnpj needs be invalid', () => {
+    //     const value = '60.645.441/0001-71';
+    //     expect(validateCNPJ(value)).toBe(false);
+    // });
 
-    it('incomplete cnpj needs be invalid', () => {
-        const value = '60.645.441/0001';
-        expect(validateCNPJ(value)).toBe(false);
-    });
+    // it('incomplete cnpj needs be invalid', () => {
+    //     const value = '60.645.441/0001';
+    //     expect(validateCNPJ(value)).toBe(false);
+    // });
 
 });

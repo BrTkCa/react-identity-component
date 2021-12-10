@@ -32,6 +32,7 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^8.4.1",
     "eslint-plugin-react": "^7.27.1",
+    "husky": "^7.0.4",
     "jest": "^22.4.2",
     "jest-enzyme": "^6.0.0",
     "jsdom": "19.0.0",
@@ -52,7 +53,13 @@
     "test": "jest",
     "test:coverage": "npm test -- --coverage --coverageReporters='json-summary'",
     "test:badges": "npm run test:coverage  && jest-coverage-badges",
-    "lint": "eslint"
+    "lint": "eslint",
+    "add:coverage": "git add coverage"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test:badges && npm run add:coverage"
+    }
   },
   "jest": {
     "roots": [
@@ -60,7 +67,7 @@
     ],
     "collectCoverage": true,
     "coverageReporters": [
-      "json-summary", 
+      "json-summary",
       "text",
       "lcov"
     ]
