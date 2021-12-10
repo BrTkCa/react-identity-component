@@ -16,4 +16,4 @@
 
 ---
 
-${SUMMARY}
+TEST FOOTER
