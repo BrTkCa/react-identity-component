@@ -1,5 +1,4 @@
-#!/bin/sh 
-echo 
-npm run test:badges
-git add coverage
-# exit
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npm test
