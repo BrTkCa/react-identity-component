@@ -21,10 +21,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: EndBug/add-and-commit@v7
-      with:
-        add: 'coverage'
-        message: 'Updated coverage report and badges.'
     - uses: r-lib/actions/setup-r@v1
     - uses: r-lib/actions/setup-pandoc@v1
     - name: Use Node.js ${{ matrix.node-version }} on ${{ matrix.os }}
@@ -42,3 +38,7 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         lcov-file: ./coverage/lcov.info
+    - uses: EndBug/add-and-commit@v7
+      with:
+        add: 'coverage'
+        message: 'Updated coverage report and badges.'
