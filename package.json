@@ -54,7 +54,8 @@
     "test:coverage": "npm test -- --coverage --coverageReporters='json-summary'",
     "test:badges": "npm run test:coverage  && jest-coverage-badges",
     "lint": "eslint",
-    "add:coverage": "git add coverage"
+    "add:coverage": "git add coverage",
+    "prepare": "husky install"
   },
   "jest": {
     "roots": [
