@@ -1,7 +1,7 @@
-![Coverage Badge](https://github.com/brtkca/react-identity-component/actions/workflows/node.js.yml/badge.svg)
-
-
-${subhead}
+![Coverage Branches](https://github.com/brtkca/react-identity-component/coverage/badge-branches.svg)
+![Coverage Functions](https://github.com/brtkca/react-identity-component/coverage/badge-functions.svg)
+![Coverage Lines](https://github.com/brtkca/react-identity-component/coverage/badge-lines.svg)
+![Coverage Statements](https://github.com/brtkca/react-identity-component/coverage/badge-statements.svg)
 
 <h1 align="center">ReactJS identity component</h1>
 <h3 align="center"><b>ReactJS identity component</b> is a straightforward component to validate and apply a mask on input element that represents civil rights identity in React</h3>

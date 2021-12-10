@@ -33,12 +33,12 @@ jobs:
     - run: npm run lint
     - run: SUMMARY="$(npm test)"
 
-    - name: Update GitHub Profile README
-      uses: theboi/github-update-readme@main
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        subhead: "TEST FOOTER CHANGE"
+    # - name: Update GitHub Profile README
+    #   uses: theboi/github-update-readme@main
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   with:
+    #     subhead: "TEST FOOTER CHANGE"
 
     - if: ${{ github.ref != 'refs/heads/master'}}
       uses: romeovs/lcov-reporter-action@v0.2.16
