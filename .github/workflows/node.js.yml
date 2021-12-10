@@ -35,10 +35,11 @@ jobs:
 
     - name: Update GitHub Profile README
       uses: theboi/github-update-readme@main
+      run: SUMMARY="$(npm test)"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        footer: "$(npm test)"
+        footer: "${SUMMARY}"
 
     - if: ${{ github.ref != 'refs/heads/master'}}
       uses: romeovs/lcov-reporter-action@v0.2.16
