@@ -1,0 +1,5 @@
+#!/bin/sh 
+echo 
+npm run test:badges
+git add coverage
+# exit

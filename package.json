@@ -56,11 +56,6 @@
     "lint": "eslint",
     "add:coverage": "git add coverage"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test:badges && npm run add:coverage"
-    }
-  },
   "jest": {
     "roots": [
       "src"
