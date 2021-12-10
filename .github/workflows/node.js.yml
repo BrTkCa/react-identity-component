@@ -31,14 +31,14 @@ jobs:
     # basically npm install but only installs from package-lock
     - run: npm ci
     - run: npm run lint
-    - run: npm run test:badges
+    # - run: npm run test:badges
 
     - if: ${{ github.ref != 'refs/heads/master'}}
       uses: romeovs/lcov-reporter-action@v0.2.16
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         lcov-file: ./coverage/lcov.info
-    - uses: EndBug/add-and-commit@v7
-      with:
-        add: 'coverage'
-        message: 'Updated coverage report and badges.'
+    # - uses: EndBug/add-and-commit@v7
+    #   with:
+    #     add: 'coverage'
+    #     message: 'Updated coverage report and badges.'
