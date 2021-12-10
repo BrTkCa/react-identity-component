@@ -1,7 +1,7 @@
-![Coverage Branches](https://github.com/brtkca/react-identity-component/coverage/badge-branches.svg)
-![Coverage Functions](https://github.com/brtkca/react-identity-component/coverage/badge-functions.svg)
-![Coverage Lines](https://github.com/brtkca/react-identity-component/coverage/badge-lines.svg)
-![Coverage Statements](https://github.com/brtkca/react-identity-component/coverage/badge-statements.svg)
+![Coverage Branches](./coverage/badge-branches.svg)
+![Coverage Functions](./coverage/badge-functions.svg)
+![Coverage Lines](./coverage/badge-lines.svg)
+![Coverage Statements](./coverage/badge-statements.svg)
 
 This component generates an input that applies a mask and validates the value if required. The validation is based on mathematical rules, without third-party libraries or online verification.
 
