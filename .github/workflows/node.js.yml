@@ -38,7 +38,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        footer: "${SUMMARY}"
+        footer: "TEST FOOTER"
 
     - if: ${{ github.ref != 'refs/heads/master'}}
       uses: romeovs/lcov-reporter-action@v0.2.16
